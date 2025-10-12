@@ -1,5 +1,5 @@
 ---
-title: ガイド
+title: Lightdash
 weight: 10
 ---
 
