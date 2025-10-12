@@ -1,6 +1,7 @@
 ---
 title: Lightdash
 weight: 10
+bookCollapseSection: true
 ---
 
 # ガイド（章）
