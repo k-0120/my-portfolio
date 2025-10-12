@@ -1,0 +1,19 @@
+baseURL = "https://portfolio.k-work.space/"
+title = "My Knowledge Book"
+languageCode = "ja"
+defaultContentLanguage = "ja"
+theme = "book"
+
+# 階層の並び替え・目次の生成など（必要に応じて）
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+
+[params]
+  BookToC = true          # 右側の目次
+  BookSectionPagesMenu = "main"  # セクション自動メニュー
+  BookSearch = true
+  BookRepo = ""           # GitHub リポジトリURLを載せたい場合
+  BookDateFormat = "2006-01-02"
+  BookComments = false
