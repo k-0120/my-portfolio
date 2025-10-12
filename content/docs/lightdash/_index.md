@@ -1,9 +1,9 @@
 ---
 title: Lightdash
-weight: 10
+weight: 3
 bookCollapseSection: true
 ---
 
-# ガイド（章）
+# Lightdash
 
-セットアップから発展的な調整まで。
+

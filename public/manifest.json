@@ -1,6 +1,6 @@
 {
-  "name": "My Knowledge Book",
-  "short_name": "My Knowledge Book",
+  "name": "K's Workspace",
+  "short_name": "K's Workspace",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
