@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on K&#39;s Workspace</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Blog on K&#39;s Workspace</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 13 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ポートフォリオサイトを作ってみた</title>
+      <link>http://localhost:1313/posts/20251013/</link>
+      <pubDate>Mon, 13 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/20251013/</guid>
+      <description>&lt;p&gt;Cloudflare Pages + Hugoの組み合わせ。&lt;/p&gt;&#xA;&lt;p&gt;Cloudflare Pagesは、UIもわかりやすいし、無料だし、カスタムドメインも使えるし、GitHub連携もあるしで最高だった。&lt;/p&gt;&#xA;&lt;p&gt;静的サイトジェネレーターとして初めてHugoを使ってみたけど、こちらもシンプル、かつ使いやすくてとても良かった。&lt;/p&gt;&#xA;&lt;p&gt;使ってるテーマは&lt;a href=&#34;https://github.com/alex-shpak/hugo-book&#34;&gt;huho-book&lt;/a&gt;。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

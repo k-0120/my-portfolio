@@ -1,6 +1,5 @@
 h1 { 
   font-size: 3rem; 
-  margin-top: 1.5em;
   margin-bottom: 1em;
 }
 
@@ -22,17 +21,14 @@ h6 {
   }
 }
 
-.book-page h2 {
+.book-article h2 {
   font-size: 2.5rem;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 
-.book-page h3 {
-  font-size: 2rem;
-}
-
-.book-page h4 {
-  font-size: 1.3rem;
+.book-article  h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1em;
 }
 
 .book-header {
@@ -55,11 +51,7 @@ h2.book-brand {
   font-size: 0.9rem;
 }
 
-.book-article h3 {
-  margin-top: 2em;
-}
-
-.book-article p {
+.markdown p {
   font-size: 1.1rem;
   margin-block-end: 2em;
 }

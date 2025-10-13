@@ -32,16 +32,22 @@ theme = "book"
 
 [[menu.home]]
   name = 'Knowledge'
-  pageRef = '/docs'
+  pageRef = '/docs/knowledge'
   weight = 2
 
 [[menu.home]]
   name = 'Lightdash'
-  pageRef = '/docs/lightdash/'
-  weight = 20
+  pageRef = '/docs/knowledge/lightdash/'
+  weight = 1
   parent = 'Knowledge'
 
 [[menu.home]]
   name = 'Dialy'
-  pageRef = '/docs/dialy'
+  pageRef = '/docs'
   weight = 3
+
+[[menu.home]]
+  name = '2025'
+  pageRef = '/docs/dialy'
+  weight = 1
+  parent = 'Dialy'

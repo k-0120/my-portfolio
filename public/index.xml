@@ -6,41 +6,28 @@
     <description>Recent content on K&#39;s Workspace</description>
     <generator>Hugo</generator>
     <language>ja</language>
+    <lastBuildDate>Mon, 13 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ポートフォリオサイトを作ってみた</title>
+      <link>http://localhost:1313/posts/20251013/</link>
+      <pubDate>Mon, 13 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/20251013/</guid>
+      <description>&lt;p&gt;Cloudflare Pages + Hugoの組み合わせ。&lt;/p&gt;&#xA;&lt;p&gt;Cloudflare Pagesは、UIもわかりやすいし、無料だし、カスタムドメインも使えるし、GitHub連携もあるしで最高だった。&lt;/p&gt;&#xA;&lt;p&gt;静的サイトジェネレーターとして初めてHugoを使ってみたけど、こちらもシンプル、かつ使いやすくてとても良かった。&lt;/p&gt;&#xA;&lt;p&gt;使ってるテーマは&lt;a href=&#34;https://github.com/alex-shpak/hugo-book&#34;&gt;huho-book&lt;/a&gt;。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>About</title>
       <link>http://localhost:1313/docs/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/about/</guid>
-      <description>&lt;h2 id=&#34;about&#34;&gt;About&lt;a class=&#34;anchor&#34; href=&#34;#about&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;こんにちは、&lt;a href=&#34;https://x.com/k_data_engineer&#34;&gt;K&lt;/a&gt;です。&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;「意思決定の質とスピードを最大化させる」&lt;/strong&gt; を信条に、データの取り込みから加工、可視化までを一気通貫でやっています。&lt;/p&gt;&#xA;&lt;h3 id=&#34;career&#34;&gt;Career&lt;a class=&#34;anchor&#34; href=&#34;#career&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h4 id=&#34;株式会社エイチームブライズ20144202110&#34;&gt;株式会社エイチームブライズ(2014/4〜2021/10)&lt;a class=&#34;anchor&#34; href=&#34;#%e6%a0%aa%e5%bc%8f%e4%bc%9a%e7%a4%be%e3%82%a8%e3%82%a4%e3%83%81%e3%83%bc%e3%83%a0%e3%83%96%e3%83%a9%e3%82%a4%e3%82%ba20144202110&#34;&gt;#&lt;/a&gt;&lt;/h4&gt;&#xA;&lt;h4 id=&#34;株式会社オープンエイト20211120227&#34;&gt;株式会社オープンエイト(2021/11〜2022/7)&lt;a class=&#34;anchor&#34; href=&#34;#%e6%a0%aa%e5%bc%8f%e4%bc%9a%e7%a4%be%e3%82%aa%e3%83%bc%e3%83%97%e3%83%b3%e3%82%a8%e3%82%a4%e3%83%8820211120227&#34;&gt;#&lt;/a&gt;&lt;/h4&gt;&#xA;&lt;h4 id=&#34;stores株式会社2022820259&#34;&gt;STORES株式会社(2022/8〜2025/9)&lt;a class=&#34;anchor&#34; href=&#34;#stores%e6%a0%aa%e5%bc%8f%e4%bc%9a%e7%a4%be2022820259&#34;&gt;#&lt;/a&gt;&lt;/h4&gt;&#xA;&lt;h4 id=&#34;株式会社leaner-technologies202510&#34;&gt;株式会社Leaner Technologies(2025/10〜)&lt;a class=&#34;anchor&#34; href=&#34;#%e6%a0%aa%e5%bc%8f%e4%bc%9a%e7%a4%beleaner-technologies202510&#34;&gt;#&lt;/a&gt;&lt;/h4&gt;</description>
+      <description>&lt;h1 id=&#34;about&#34;&gt;About&lt;a class=&#34;anchor&#34; href=&#34;#about&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;こんにちは、&lt;a href=&#34;https://x.com/k_data_engineer&#34;&gt;K&lt;/a&gt;です。&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;「意思決定の質とスピードを最大化させる」&lt;/strong&gt; を信条に、データの取り込みから加工、可視化までを一気通貫でやっています。&lt;/p&gt;&#xA;&lt;h2 id=&#34;career&#34;&gt;Career&lt;a class=&#34;anchor&#34; href=&#34;#career&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;株式会社エイチームブライズ20144202110&#34;&gt;株式会社エイチームブライズ(2014/4〜2021/10)&lt;a class=&#34;anchor&#34; href=&#34;#%e6%a0%aa%e5%bc%8f%e4%bc%9a%e7%a4%be%e3%82%a8%e3%82%a4%e3%83%81%e3%83%bc%e3%83%a0%e3%83%96%e3%83%a9%e3%82%a4%e3%82%ba20144202110&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;株式会社オープンエイト20211120227&#34;&gt;株式会社オープンエイト(2021/11〜2022/7)&lt;a class=&#34;anchor&#34; href=&#34;#%e6%a0%aa%e5%bc%8f%e4%bc%9a%e7%a4%be%e3%82%aa%e3%83%bc%e3%83%97%e3%83%b3%e3%82%a8%e3%82%a4%e3%83%8820211120227&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;stores株式会社2022820259&#34;&gt;STORES株式会社(2022/8〜2025/9)&lt;a class=&#34;anchor&#34; href=&#34;#stores%e6%a0%aa%e5%bc%8f%e4%bc%9a%e7%a4%be2022820259&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;株式会社leaner-technologies202510&#34;&gt;株式会社Leaner Technologies(2025/10〜)&lt;a class=&#34;anchor&#34; href=&#34;#%e6%a0%aa%e5%bc%8f%e4%bc%9a%e7%a4%beleaner-technologies202510&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;</description>
     </item>
     <item>
-      <title>sample1</title>
-      <link>http://localhost:1313/docs/knowledge/lightdash/sample1/</link>
+      <title>Self-Host</title>
+      <link>http://localhost:1313/docs/knowledge/lightdash/self_host/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/knowledge/lightdash/sample1/</guid>
-      <description>&lt;h2 id=&#34;header2&#34;&gt;header2&lt;a class=&#34;anchor&#34; href=&#34;#header2&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;header3&#34;&gt;header3&lt;a class=&#34;anchor&#34; href=&#34;#header3&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;</description>
-    </item>
-    <item>
-      <title>ポートフォリオサイトを作ってみた</title>
-      <link>http://localhost:1313/docs/dialy/2025/10/20251013/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/dialy/2025/10/20251013/</guid>
-      <description>&lt;h2 id=&#34;header2&#34;&gt;header2&lt;a class=&#34;anchor&#34; href=&#34;#header2&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;header3&#34;&gt;header3&lt;a class=&#34;anchor&#34; href=&#34;#header3&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;</description>
-    </item>
-    <item>
-      <title>sample2</title>
-      <link>http://localhost:1313/docs/knowledge/lightdash/sample2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/knowledge/lightdash/sample2/</guid>
-      <description>&lt;h2 id=&#34;header2&#34;&gt;header2&lt;a class=&#34;anchor&#34; href=&#34;#header2&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;header3&#34;&gt;header3&lt;a class=&#34;anchor&#34; href=&#34;#header3&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;</description>
-    </item>
-    <item>
-      <title>sample3</title>
-      <link>http://localhost:1313/docs/knowledge/lightdash/sample3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/knowledge/lightdash/sample3/</guid>
-      <description>&lt;h2 id=&#34;header2&#34;&gt;header2&lt;a class=&#34;anchor&#34; href=&#34;#header2&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;header3&#34;&gt;header3&lt;a class=&#34;anchor&#34; href=&#34;#header3&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;</description>
+      <guid>http://localhost:1313/docs/knowledge/lightdash/self_host/</guid>
+      <description>&lt;h1 id=&#34;self-host&#34;&gt;Self-Host&lt;a class=&#34;anchor&#34; href=&#34;#self-host&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;</description>
     </item>
   </channel>
 </rss>
