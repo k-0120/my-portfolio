@@ -19,6 +19,7 @@ theme = "book"
   BookDateFormat = "2006-01-02"
   BookComments = false
   BookTheme = 'auto'
+  images = ["images/ogp-default.png"]
 
 [services]
   [services.googleAnalytics]
