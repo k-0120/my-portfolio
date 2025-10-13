@@ -1,0 +1,189 @@
+{{- $site := .Page.Site -}}
+{{- $rawPath := .Get "path" | default (.Get 0) -}}
+{{- $link := .Get "link" -}}
+{{- $title := .Get "title" -}}
+{{- $description := .Get "description" -}}
+{{- $image := .Get "image" -}}
+{{- $label := .Get "label" -}}
+{{- $target := "" -}}
+{{- $remoteURL := "" -}}
+{{- $remoteContent := "" -}}
+{{- $parsedRemote := "" -}}
+{{- $remoteBase := "" -}}
+{{- $remoteDir := "" -}}
+
+{{- if $rawPath }}
+  {{- $clean := trim $rawPath "/" -}}
+  {{- $candidate := $site.GetPage (printf "/%s" $clean) -}}
+  {{- if not $candidate }}
+    {{- $candidate = $site.GetPage $clean -}}
+  {{- end }}
+  {{- if not $candidate }}
+    {{- $candidate = $site.GetPage (printf "posts/%s" $clean) -}}
+  {{- end }}
+  {{- $target = $candidate -}}
+{{- end }}
+
+{{- if and (not $link) $target }}
+  {{- $link = $target.RelPermalink -}}
+{{- end }}
+
+{{- $needRemote := and (not $target) $link (or (not $title) (not $image)) -}}
+{{- if and $needRemote (or (hasPrefix $link "http://") (hasPrefix $link "https://") (hasPrefix $link "//")) }}
+  {{- $remoteURL = $link -}}
+  {{- if hasPrefix $remoteURL "//" }}
+    {{- $remoteURL = printf "https:%s" $remoteURL -}}
+  {{- end }}
+  {{- with resources.GetRemote $remoteURL }}
+    {{- $remoteContent = string .Content -}}
+    {{- $parsedRemote = urls.Parse $remoteURL -}}
+    {{- if $parsedRemote }}
+      {{- $scheme := $parsedRemote.Scheme | default "https" -}}
+      {{- $host := $parsedRemote.Host -}}
+      {{- if $host }}
+        {{- $remoteBase = printf "%s://%s" $scheme $host -}}
+        {{- $dir := path.Dir $parsedRemote.Path -}}
+        {{- if or (eq $dir "") (eq $dir ".") (eq $dir "/") }}
+          {{- $remoteDir = $remoteBase -}}
+        {{- else }}
+          {{- $remoteDir = urls.JoinPath $remoteBase $dir -}}
+        {{- end }}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{- if and (not $title) $target }}
+  {{- $title = $target.LinkTitle | default $target.Title -}}
+{{- end }}
+
+{{- if and (not $title) (ne $remoteContent "") }}
+  {{- with findRESubmatch "(?is)<title[^>]*>(.*?)</title>" $remoteContent }}
+    {{- $first := index . 0 -}}
+    {{- if ge (len $first) 2 }}
+      {{- $title = index $first 1 | htmlUnescape | plainify -}}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{- if and (not $description) $target }}
+  {{- with $target.Params.description }}
+    {{- $description = . -}}
+  {{- else }}
+    {{- with $target.Params.summary }}
+      {{- $description = . -}}
+    {{- else }}
+      {{- with $target.Summary }}
+        {{- $description = . | plainify -}}
+      {{- else }}
+        {{- $description = $target.Plain | plainify | truncate 120 -}}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{- if and (not $image) $target }}
+  {{- with $target.Params.cover }}
+    {{- $image = . -}}
+  {{- else }}
+    {{- with $target.Params.image }}
+      {{- $image = . -}}
+    {{- else }}
+      {{- with $target.Params.thumbnail }}
+        {{- $image = . -}}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{- if and (not $image) (ne $remoteContent "") }}
+  {{- $imageCandidate := "" -}}
+  {{- $patterns := slice
+      `(?is)<meta[^>]+property=["']og:image(?:\:secure_url)?["'][^>]*content=["']([^"']+)["'][^>]*>`
+      `(?is)<meta[^>]+content=["']([^"']+)["'][^>]*(property|name)=["']og:image(?:\:secure_url)?["'][^>]*>`
+      `(?is)<meta[^>]+name=["']twitter:image(?::src)?["'][^>]*content=["']([^"']+)["'][^>]*>`
+      `(?is)<meta[^>]+content=["']([^"']+)["'][^>]*name=["']twitter:image(?::src)?["'][^>]*>`
+      `(?is)<meta[^>]+itemprop=["']image["'][^>]*content=["']([^"']+)["'][^>]*>`
+    -}}
+  {{- range $patterns }}
+    {{- if eq $imageCandidate "" }}
+      {{- with findRESubmatch . $remoteContent }}
+        {{- $match := index . 0 -}}
+        {{- if ge (len $match) 2 }}
+          {{- $imageCandidate = index $match 1 | htmlUnescape -}}
+        {{- end }}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+  {{- if $imageCandidate }}
+    {{- if hasPrefix $imageCandidate "//" }}
+      {{- $imageCandidate = printf "https:%s" $imageCandidate -}}
+    {{- else if not (or (hasPrefix $imageCandidate "http://") (hasPrefix $imageCandidate "https://")) }}
+      {{- if $remoteBase }}
+        {{- if hasPrefix $imageCandidate "/" }}
+          {{- $imageCandidate = printf "%s%s" $remoteBase $imageCandidate -}}
+        {{- else if $remoteDir }}
+          {{- $imageCandidate = urls.JoinPath $remoteDir $imageCandidate -}}
+        {{- else }}
+          {{- $imageCandidate = urls.JoinPath $remoteBase $imageCandidate -}}
+        {{- end }}
+      {{- end }}
+    {{- end }}
+    {{- $image = $imageCandidate -}}
+  {{- end }}
+{{- end }}
+
+{{- $imageURL := "" -}}
+{{- if $image }}
+  {{- if or (hasPrefix $image "http://") (hasPrefix $image "https://") (hasPrefix $image "//") }}
+    {{- $imageURL = $image -}}
+  {{- else }}
+    {{- $imageURL = $image | relURL -}}
+  {{- end }}
+{{- end }}
+
+{{- $date := "" -}}
+{{- if $target }}
+  {{- $date = $target.Date.Format "2006-01-02" -}}
+{{- end }}
+{{- with .Get "date" }}
+  {{- $date = . -}}
+{{- end }}
+{{- if eq $date "0001-01-01" }}
+  {{- $date = "" -}}
+{{- end }}
+
+{{- $showDate := true -}}
+{{- with .Get "showDate" }}
+  {{- $showDate = ne (lower .) "false" -}}
+{{- end }}
+
+{{- $description = $description | plainify | truncate 140 -}}
+
+{{- if and $title $link }}
+  <article class="blog-card{{ if $imageURL }} blog-card--with-thumb{{ end }}">
+    <a class="blog-card__link" href="{{ $link }}">
+      {{- if $imageURL }}
+        <div class="blog-card__thumb">
+          <img src="{{ $imageURL }}" alt="{{ $title }}" loading="lazy" decoding="async" />
+        </div>
+      {{- end }}
+      <div class="blog-card__body">
+        {{- if $label }}
+          <p class="blog-card__label">{{ $label }}</p>
+        {{- end }}
+        <p class="blog-card__title">{{ $title }}</p>
+        {{- if and $showDate $date }}
+          <p class="blog-card__meta">{{ $date }}</p>
+        {{- end }}
+        {{- if $description }}
+          <p class="blog-card__excerpt">{{ $description }}</p>
+        {{- end }}
+      </div>
+    </a>
+  </article>
+{{- else }}
+  <p class="blog-card blog-card--error">
+    Missing {{ if not $title }}title{{ end }}{{ if and (not $title) (not $link) }} and {{ end }}{{ if not $link }}link{{ end }} for blog card shortcode.
+  </p>
+{{- end }}

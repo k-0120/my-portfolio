@@ -27,7 +27,7 @@
       <link>http://localhost:1313/docs/knowledge/lightdash/self_host/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/knowledge/lightdash/self_host/</guid>
-      <description>&lt;h1 id=&#34;self-host&#34;&gt;Self-Host&lt;a class=&#34;anchor&#34; href=&#34;#self-host&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;</description>
+      <description>&lt;h1 id=&#34;self-host&#34;&gt;Self-Host&lt;a class=&#34;anchor&#34; href=&#34;#self-host&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&#xA;  &lt;article class=&#34;blog-card blog-card--with-thumb&#34;&gt;&#xA;    &lt;a class=&#34;blog-card__link&#34; href=&#34;https://product.st.inc/entry/2025/06/30/180450&#34;&gt;&#xA;        &lt;div class=&#34;blog-card__thumb&#34;&gt;&#xA;          &lt;img src=&#34;https://cdn.image.st-hatena.com/image/scale/802dde62b92e851c2b1597cbda9b781202775adb/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fstores-tech%2F20250630%2F20250630180453.jpg&#34; alt=&#34;Cloud Run &amp;#43; IAP で Lightdash をホスティングしてみた - STORES Product Blog&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; /&gt;&#xA;        &lt;/div&gt;&#xA;      &lt;div class=&#34;blog-card__body&#34;&gt;&#xA;        &lt;p class=&#34;blog-card__title&#34;&gt;Cloud Run + IAP で Lightdash をホスティングしてみた - STORES Product Blog&lt;/p&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/a&gt;&#xA;  &lt;/article&gt;</description>
     </item>
   </channel>
 </rss>

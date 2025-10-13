@@ -18,7 +18,7 @@ theme = "book"
   BookRepo = ""           # GitHub リポジトリURLを載せたい場合
   BookDateFormat = "2006-01-02"
   BookComments = false
-  BookTheme = 'auto'
+  BookTheme = 'light'
 
 [services]
   [services.googleAnalytics]
@@ -42,12 +42,7 @@ theme = "book"
   parent = 'Knowledge'
 
 [[menu.home]]
-  name = 'Dialy'
-  pageRef = '/docs'
+  name = 'Blog'
+  pageRef = '/posts'
   weight = 3
 
-[[menu.home]]
-  name = '2025'
-  pageRef = '/docs/dialy'
-  weight = 1
-  parent = 'Dialy'
