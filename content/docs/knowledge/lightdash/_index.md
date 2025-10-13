@@ -1,6 +1,6 @@
 ---
 title: Lightdash
-weight: 3
+weight: 2
 bookCollapseSection: true
 ---
 

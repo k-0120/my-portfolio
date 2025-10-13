@@ -11,6 +11,7 @@ theme = "book"
     endLevel = 4
 
 [params]
+  BookSection = 'docs'
   BookToC = true          # 右側の目次
   BookSectionPagesMenu = "main"  # セクション自動メニュー
   BookSearch = true
@@ -21,3 +22,25 @@ theme = "book"
 [services]
   [services.googleAnalytics]
     id = 'G-PH7P4FG1P9'
+
+[menu]
+[[menu.home]]
+  name = 'About'
+  pageRef = '/docs/about'
+  weight = 1
+
+[[menu.home]]
+  name = 'Knowledge'
+  pageRef = '/docs'
+  weight = 2
+
+[[menu.home]]
+  name = 'Lightdash'
+  pageRef = '/docs/lightdash/'
+  weight = 20
+  parent = 'Knowledge'
+
+[[menu.home]]
+  name = 'Dialy'
+  pageRef = '/docs/dialy'
+  weight = 3
