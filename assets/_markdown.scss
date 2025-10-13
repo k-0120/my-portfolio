@@ -1,18 +1,27 @@
 @media (max-width: 768px) {
   /* スマホ用 */
   h1 {
-    font-size: 2rem; 
+    font-size: 1.8rem; 
     margin-bottom: 1em;
   }
 
   .book-article h2 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     margin-bottom: 1em;
   }
 
   .book-article  h3 {
     font-size: 1.2rem;
     margin-bottom: 1em;
+  }
+
+  .book-header {
+    font-size: 0.9rem;
+  }
+
+  .markdown p {
+    font-size: 0.9rem;
+    margin-block-end: 2em;
   }
 }
 
@@ -31,6 +40,15 @@
   .book-article  h3 {
     font-size: 1.5rem;
     margin-bottom: 1em;
+  }
+
+  .book-header {
+    font-size: 1.3rem;
+  }
+
+  .markdown p {
+    font-size: 1.1rem;
+    margin-block-end: 2em;
   }
 }
 
@@ -53,11 +71,6 @@ h6 {
 }
 
 
-
-.book-header {
-  font-size: 1.3rem;
-}
-
 h2.book-brand {
   font-size: 1.5rem;
 }
@@ -72,9 +85,4 @@ h2.book-brand {
 
 .book-toc {
   font-size: 0.9rem;
-}
-
-.markdown p {
-  font-size: 1.1rem;
-  margin-block-end: 2em;
 }
