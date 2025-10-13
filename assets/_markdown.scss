@@ -1,0 +1,65 @@
+h1 { 
+  font-size: 3rem; 
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  a.anchor {
+    opacity: 0;
+    font-size: 0.75em;
+    margin-inline-start: .25em;
+  }
+
+  &:hover a.anchor, a.anchor:focus-visible {
+    opacity: initial;
+    text-decoration: none;
+  }
+}
+
+.book-page h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5em;
+}
+
+.book-page h3 {
+  font-size: 2rem;
+}
+
+.book-page h4 {
+  font-size: 1.3rem;
+}
+
+.book-header {
+  font-size: 1.3rem;
+}
+
+h2.book-brand {
+  font-size: 1.5rem;
+}
+
+.book-menu-content {
+  font-size: 1rem;
+}
+
+.book-footer {
+  font-size: 1rem;
+}
+
+.book-toc {
+  font-size: 0.9rem;
+}
+
+.book-article h3 {
+  margin-top: 2em;
+}
+
+.book-article p {
+  font-size: 1.1rem;
+  margin-block-end: 2em;
+}

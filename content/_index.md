@@ -1,10 +1,10 @@
 ---
-title: Top
+title: ""
 weight: 1
 layout: landing
 ---
 
-# 👻
+# K's Workspace {anchor=false}
 
-このサイトは **Hugo Book テーマ**で作った階層型ドキュメントです。
-左サイドバーのツリーから章・節へ移動できます。
+日々、学んだこと、感じたことを置いておく場所です。
+

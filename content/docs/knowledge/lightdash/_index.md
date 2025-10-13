@@ -4,6 +4,4 @@ weight: 2
 bookCollapseSection: true
 ---
 
-# Lightdash
-
-
+## Lightdash
