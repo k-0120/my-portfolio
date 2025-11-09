@@ -43,6 +43,12 @@ theme = "book"
   parent = 'Knowledge'
 
 [[menu.home]]
+  name = 'Lightdash'
+  pageRef = '/docs/knowledge/modeling/'
+  weight = 1
+  parent = 'Data Modeling'
+
+[[menu.home]]
   name = 'Blog'
   pageRef = '/posts'
   weight = 3
